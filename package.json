@@ -1,0 +1,29 @@
+{
+  "name": "epmloyeereviewsystem",
+  "version": "1.0.0",
+  "description": "To keep track of all the employees work",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sjasvin93/employeereviesystem.git"
+  },
+  "keywords": [
+    "Reviews"
+  ],
+  "author": "Jasvinder Singh Sandhu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sjasvin93/employeereviesystem/issues"
+  },
+  "homepage": "https://github.com/Sjasvin93/employeereviesystem#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-ejs-layouts": "^2.5.1",
+    "mongoose": "^6.3.6"
+  }
+}
