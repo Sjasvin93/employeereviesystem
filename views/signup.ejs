@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="/css/signup.css">
+
+<div class="users_signup_form_container">
+    <form action="/users/create-user" method="post" id="users_signup_form" >
+        <input type="text" placeholder="Enter the Name" name="userName" id="user_name" required>
+        <br>
+        <input type="email" placeholder="Enter the Email" name="userEmail" id="user_email"  required>
+        <br>
+        <input type="password" placeholder="Enter password" name="userPassword"  id="user_password" required>
+        <br>
+        <input type="password" placeholder="confirm password" name="userConfirmPassword" id="user_confirm_password" required >
+        <br>
+        <select id="select_user_type" name="userType" required>
+            <option>SELECT USER TYPE</option>
+            <option value="ADMIN">ADMIN</option>
+            <option value="EMPLOYEE">EMPLOYEE</option>
+        </select>
+        <br>
+        <input type="submit" value="Sign up" id="submit_user_details">
+        <p id="user_login">Already have an account <a href="/users/sign-in">Log In</a></p>
+    </form>
+</div>

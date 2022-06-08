@@ -1,0 +1,48 @@
+<link rel="stylesheet" href="/css/employeeprofile.css">
+
+<% if(isPendingReview) {%>
+    <p id="pending_reviews_heading">PENDING REVIEWS</p>
+    <div id="assign_reviews_heading">            
+        <p id="heading_employee_name">EMPLOYEE NAME</p>
+        <p id="heading_employee_email">EMPLOYEE EMAIL</p>
+    </div>
+    <div id="pending_reviews_container">
+        <% for(p of pending_reviews) { %>
+            <form action="/employees/give-feedback/<%=p.id%>" method="post">  
+                <div id="pending_reviews_list">
+                    <div id="emp_name">
+                        <%= p.name %>                                    
+                    </div>
+                    <div id="emp_email">
+                        <%= p.email %>                                    
+                    </div>
+                    <div id="assign_btn_div">
+                        <input type="hidden" name="userId" value="<%= profile_user.id %>" required>
+                        <button id="feedback_btn" >GIVE FEEDBACK</button>
+                    </div>                
+                </div>
+            </form>    
+        <% } %>
+    </div>
+<%}%>
+<% if(isReview) {%>
+    <div id="your_reviews_heading_container">
+        <p id="reviews_heading">YOUR REVIEWS</p>
+    </div>
+    <div id="main_reviews_container">
+        <% for(var i = 0 ; i < emp_reviews.length ; i++) { %>
+            <div id="reviews_list">
+                <div id="review">
+                    <%= emp_reviews[i].review %>
+                </div>
+                <div id="review_auth">
+                    -<%= auth_name[i] %>
+                </div>
+            </div>    
+        <%}%>         
+    </div>
+<%}%>
+<% if(!isReview && !isPendingReview) {%>
+    <p id="no_data_available">NO FEEDBACK/REVIEWS AVAILABLE</p>
+<%}%>
+

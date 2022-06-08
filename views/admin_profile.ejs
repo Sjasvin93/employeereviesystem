@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="/css/adminprofile.css">
+<% if(isUser){%>
+<div id="employee_list_heading">            
+    <p id="heading_employee_name">EMPLOYEE NAME</p>
+    <p id="heading_employee_email">EMPLOYEE EMAIL</p>
+</div>  
+<ul class="employee-list-container">
+    <% for(u of users) { %>
+        <li id="employee_list">
+            <div id="employee_name">
+                <%= u.name %>
+            </div>
+            <div id="employee_email">
+                <%= u.email %>
+            </div>
+            <div id="employee_action_btns">
+                <a href="/admins/update-employee/<%= u.id %>" id="update_employee_btn">UPDATE</a>
+                <a href="/admins/employee-details/<%= u.id %>" id="employee_details_btn">DETAILS</a>
+                <form action="/admins/employee-action/<%= u.id %>" method="post">
+                    <button id="make_admin_btn" value="admin" name="actionButton">MAKE ADMIN</button>
+                    <button id="delete_employee_btn" value="delete" name="actionButton">DELETE</button>
+                </form>                       
+            </div>            
+        </li>
+    <% } %>
+</ul>
+<% }else{ %>
+    <p id="no_employee_info">NO EMPLOYEE AVAILABLE</p>
+<% } %>

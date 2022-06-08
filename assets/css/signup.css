@@ -1,0 +1,61 @@
+.users_signup_form_container{
+    height: 400px;
+    width: 450px;
+    background-color: aquamarine;
+    border-radius: 10%;
+    margin-left: 35%;
+    margin-top: 7%;
+}
+
+#users_signup_form{
+    padding: 30px;
+    text-align: center;    
+}
+
+#user_name , #user_email, #user_password, #user_confirm_password{    
+    border: none;
+    background: none;
+    border-bottom: solid 1px black;
+    height: 7%;
+    width: 70%;
+    margin-bottom: 25px;
+}
+
+#select_user_type{
+    background: none;
+    border: none;
+    border-bottom: solid 1px black;
+    width: 70%;
+    margin-bottom: 25px;
+}
+
+#select_user_type option{
+    padding-bottom: 30px;
+    background-color: aqua;
+    color: #050505;
+}
+
+#submit_user_details{
+    background-color: #050505;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+#submit_user_details:hover{
+    background-color: #4e4c4c;
+    cursor: pointer;
+}
+
+#user_login{
+    margin-top: 30px;
+}
+
+#user_login a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}

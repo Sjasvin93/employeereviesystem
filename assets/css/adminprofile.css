@@ -1,0 +1,131 @@
+#employee_list_heading{
+    width: 90%;
+    display: flex;
+    background-color: rgb(47, 146, 240);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-left: 5%;
+}
+
+#heading_employee_name{
+    margin-left: 30px;
+    
+}
+
+#heading_employee_email{
+    margin-left: 24%;
+}
+
+.employee-list-container{
+    width: 90%;
+    margin-left: 2%;
+    overflow-y: scroll;
+    height: 475px;    
+}
+
+#employee_list{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+#employee_list:hover{
+    background-color: rgb(230, 224, 224);
+}
+
+#employee_name{
+    margin-top: 20px;
+    margin-left: 3%;
+    width: 150px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+#employee_email{
+    margin-top: 20px;
+    width: 150px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+#employee_action_btns{
+    margin-top: 10px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#update_employee_btn, #employee_details_btn{
+    background-color: #050505;
+    color: white;
+    margin-right: 2px;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    height: 25px;
+}
+
+
+#delete_employee_btn, #make_admin_btn{
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;    
+    color: aliceblue;
+    height: 35px;
+}
+
+#update_employee_btn:hover{
+    background-color: rgb(43, 40, 40);
+}
+#employee_details_btn{
+    background-color: rgb(10, 10, 235);
+    color: bisque;
+}
+#employee_details_btn:hover{
+    background-color: rgb(72, 72, 235);
+}
+#delete_employee_btn{
+    background-color: red;
+}
+#delete_employee_btn:hover{
+    background-color: rgb(240, 51, 51);
+    cursor: pointer;
+}
+#make_admin_btn{
+    background-color: rgb(3, 75, 18);
+}
+#make_admin_btn:hover{
+    background-color: rgb(77, 247, 86);
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(1, 57, 94); 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #22027a; 
+  }
+
+#no_employee_info{
+    margin-left: 40%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 15%;
+    font-weight: bold;
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    width: 20%;
+    height: 20px;
+    color: aliceblue;
+    border-radius: 2px;    
+}

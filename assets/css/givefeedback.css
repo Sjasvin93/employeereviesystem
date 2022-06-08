@@ -1,0 +1,58 @@
+#feedback_heading{
+    margin-left: 35%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+    font-weight: bold;
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    width: 30%;
+    height: 20px;
+    color: aliceblue;
+    border-radius: 2px;
+}
+
+.feedback-conatiner{
+    height: 450px;
+    width: 31.5%;
+    margin-left: 35%;
+    border-radius: 2px;
+}
+
+#emp_name_div,#emp_email_div{
+    text-align: left;
+    width: 150px;
+    padding: 5px;
+    display: flex;
+    text-transform: uppercase;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+}
+
+#name, #email{
+    margin-top: 18px;
+    margin-left: 10px;
+}
+
+#employee_feedback{
+    width: 95%;
+    height: 65%;
+    margin-left: 9px;    
+}
+
+#submit_feedback_btn{
+    background-color: #050505;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 2px;
+    margin-left: 58%;
+    margin-top: 10px;
+}
+
+#submit_feedback_btn:hover{
+    background-color: #4e4c4c;
+    cursor: pointer;
+}

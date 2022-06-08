@@ -1,0 +1,40 @@
+#layout_navigation{
+    color: rgb(12, 12, 11);
+    height: 40px;
+    width: 100%; 
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
+    height: 50px;
+}
+
+#mini_logo{
+    margin-top: 15px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 25px;
+}
+
+#auth_links{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+}
+
+#auth_links a{
+    text-decoration: none;
+    color: rgb(14, 13, 12);
+    text-align: center;
+    padding: 15px;
+    font-size: large;
+}
+
+#auth_links a:hover{
+    background-color: rgb(13, 14, 14);
+    box-shadow: 1px 1px 1px 1px;
+    color: aqua;
+}
+

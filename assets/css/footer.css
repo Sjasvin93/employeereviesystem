@@ -1,0 +1,11 @@
+#footer_layout{
+    background-color: aqua;
+    color: black;
+    height: 40px;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}

@@ -1,0 +1,152 @@
+#pending_reviews_heading,#employee_reviews_list_heading{
+    margin-left: 70px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+    font-weight: bold;
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    width: 13%;
+    height: 20px;
+    color: aliceblue;
+    border-radius: 2px;
+}
+
+#pending_reviews_container{
+    width: 93%;
+    height: 180px;
+    overflow-y: scroll;
+    margin-left: 2%;
+    margin-top: 5px;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(1, 57, 94); 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #22027a; 
+}
+
+#assign_reviews_heading{
+    width: 90%;
+    display: flex;
+    background-color: rgb(47, 146, 240);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-left: 5%;
+    height: 30px;
+}
+
+#heading_employee_name{
+    margin-left: 2%;
+    margin-top: 5px;
+}
+
+#heading_employee_email{
+    margin-left: 30%;
+    margin-top: 5px;
+}
+
+#pending_reviews_list{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    width: 99%;
+    text-transform: uppercase;
+}
+
+#emp_name{
+    text-align: left;
+    width: 150px;
+    margin-left: 60px;
+}
+
+#emp_email{
+    text-align: left;
+    margin-left: 25%;
+    width: 150px;
+}
+
+#assign_btn_div{
+    margin-left: 30%;
+    background-color: #f31616;
+    margin-right: 0px;
+}
+
+#feedback_btn{
+    background-color: #050505;
+    color: white;
+    padding: 4px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 2px;
+}
+
+#feedback_btn:hover{
+    background-color: rgb(94, 91, 91);
+    cursor: pointer;
+}
+
+#your_reviews_heading_container{
+    width: 95%;
+    text-align: center;
+    background-color: rgb(47, 146, 240);
+    color: #050505;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    height: 30px;
+    margin-left: 35px;
+    margin-top: 20px;
+}
+
+#main_reviews_container{
+    height: 520px;
+    width: 97.5%;
+    margin-top: 2px;
+    overflow-y: scroll;
+}
+
+#reviews_list{
+    background-color: #a39f9f;
+    color: #050505;
+    border-radius: 10px;
+    overflow-y: scroll;
+    padding: 5px;
+    margin-bottom: 2px;
+    margin-left: 35px;
+    width: 96.5%;
+}
+
+#review{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#review_auth{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 2px;
+}
+
+#no_data_available{
+    margin-left: 40%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 15%;
+    font-weight: bold;
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    width: 20%;
+    height: 20px;
+    color: aliceblue;
+    border-radius: 2px;
+}
+
+
+

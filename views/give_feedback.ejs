@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="/css/givefeedback.css">
+
+<p id="feedback_heading">GIVE FEEDBACK</p>
+<div class="feedback-conatiner">
+    <div id="emp_name_div">
+        <p id="emp_name_heading">NAME:</p>
+        <div id="name">
+            <%= current_user.name %>
+        </div>
+    </div>
+    <div id="emp_email_div">
+        <p id="emp_email_heading">EMAIL:</p>
+        <div id="email">
+            <%= current_user.email %>
+        </div>
+    </div>
+    <div id="feedback_form">
+        <form action="/employees/submit-feedback/<%= current_user.id %>" method="post">
+            <input type="text" id="employee_feedback" name="feedback" placeholder="enter text here">
+            <input type="hidden" name="reviewAuthor" value="<%= feedback_author %>" required>
+            <br> 
+            <button id="submit_feedback_btn" name="feedback-submit">SUBMIT FEEDBACK</button>
+         </form>
+    </div>
+</div>

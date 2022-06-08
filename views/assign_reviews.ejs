@@ -1,0 +1,13 @@
+<link rel="stylesheet" href="/css/assignreviews.css">
+<p id="assign_reviews_heading">ASSIGN REVIEWS</p>
+<form action="/admins/assign-employee-reviews/<%=emp%>" method="post">
+    <div class="assign-reviews-container">
+        <% for(e of employees) { %>
+            <div id="emp_assign_list">
+                <label for="emp_names"><%= e.name %></label> 
+                <input type="checkbox" id="emp_names" name="employees" value="<%= e.id %>">                    
+            </div>                    
+        <% } %>
+    </div>
+    <input type="submit" value="ASSIGN" id="review_assign_btn">
+</form>

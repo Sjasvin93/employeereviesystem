@@ -1,0 +1,98 @@
+.employee-details-heading, .employee-reviews-heading{
+    margin-left: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+    font-weight: bold;
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    width: 13%;
+    height: 20px;
+    color: aliceblue;
+    border-radius: 2px;
+}
+.employee-details-container{
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 40px;
+    width: 90%;
+    border-radius: 10px;
+    background-color: aquamarine;
+    padding: 10px;
+    font-weight: bold;
+}
+
+#lower_div, #upper_div{
+    display: flex;
+}
+#employee_name, #employee_email{
+    margin-top: 13px;
+    text-align: left;
+    margin-left: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+}
+
+#employee_review_btn{
+    background-color: #050505;
+    color: white;
+    padding: 7px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 2px;
+    margin-top: 5px;
+    margin-left: 83%;
+}
+
+#employee_review_btn:hover{
+    background-color: #4e4c4c;
+    cursor: pointer;
+}
+
+.employee-review-list-container{
+    height: 250px;
+    width: 88%;
+    margin-left: 40px;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(1, 57, 94); 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #22027a; 
+  }
+
+  #main_reviews_container{
+      height: 250px;
+      overflow-y: scroll;
+      width: 95%;
+      padding: 0px;
+  }
+
+  #reviews_list{
+    background-color: #a39f9f;
+    color: #050505;
+    border-radius: 10px;
+    overflow-y: scroll;
+    padding: 5px;
+    margin-bottom: 2px;
+    width: 96%;
+    margin-left: 40px;
+}
+
+#review{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#review_auth{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 2px;
+}

@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="/css/employeedetails.css">
+
+<p class="employee-details-heading">EMPLOYEE DETAILS</p>
+<div class="employee-details-container">
+    <div id="upper_div">
+        <p>NAME:</p>
+        <div id="employee_name">
+            <%= user.name %>
+        </div>
+    </div>
+    <div id="lower_div">
+        <p>EMAIL:</p>
+        <div id="employee_name">
+            <%= user.email %>
+        </div>
+    </div>  
+</div>
+<a href="/admins/assign-reviews/<%= user.id %>" id="employee_review_btn">ASSIGN REVIEW</a>
+<p class="employee-reviews-heading">EMPLOYEE REVIEWS</p>
+
+    <div id="main_reviews_container">
+        <% for(var i = 0 ; i < emp_reviews.length ; i++) { %>
+            <div id="reviews_list">
+                <div id="review">
+                    <%= emp_reviews[i].review %>
+                </div>
+                <div id="review_auth">
+                    -<%= auth_name[i] %>
+                </div>
+            </div>    
+        <%}%>         
+    </div>
+
+
+
